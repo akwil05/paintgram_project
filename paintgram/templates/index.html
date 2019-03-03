@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block css %}
+	<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+{% endblock css %}
+
+{% block title %}
+	Главная страница
+{% endblock title %}
+
+{% block content %}
+	<div class="container">
+		<div class="row">
+			<div class="col-12 d-block mx-auto text-center py-5">
+				<h1 class="main-headers mb-3">Главная страница сайта Paintgram</h1>
+				<p class="mb-3">Делитесь Вашим творчеством со своими друзьями</p>
+				<img src="{% static 'images/paint.jpeg' %}" width="400px" />
+			</div>
+		</div>
+	</div>
+{% endblock content %}
+
+{% block js %}
+	<script type="text/javascript" src="{% static 'js/main.js' %}"></script>
+{% endblock js %}
